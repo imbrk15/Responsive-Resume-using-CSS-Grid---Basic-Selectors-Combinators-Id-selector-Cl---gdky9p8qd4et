@@ -5,5 +5,127 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.main-content {
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    min-height: 1000px;
+    grid-template-columns: 300px 700px;
+}
 
+.left-section {
+    background-color: rgb(63, 63, 116);
+    padding: 1rem;
+    grid-column: span 1;
+    color: white;
+}
+
+.right-section {
+    background-color: rgb(228, 239, 239);
+    grid-column: span 1 / span 2;
+}
+
+.profile-image img {
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon a i {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar {
+    border: 1px solid white;
+    height: 4px;
+}
+
+.rigth-main-content {
+    padding: 2rem 3rem;
+}
+
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+@media  screen and(max-width: 673px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left-section{
+        display: grid;
+    }
+    .right-section{
+        display: grid;
+    }
+    .profile-details{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media  screen and(max-width: 630px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left-section{
+        display: grid;
+    }
+    .right-section{
+        display: grid;
+    }
+    .profile-details{
+        display: flex;
+        justify-content: center;
+    }
+}
 /* Write CSS code below */
